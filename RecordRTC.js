@@ -817,7 +817,8 @@ RecordRTC.writeToDisk = function(options) {
 };
 
 if (typeof module !== 'undefined' /* && !!module.exports*/ ) {
-    module.exports = RecordRTC;
+    module.exports.RecordRTC = RecordRTC;
+    module.exports.MRecordRTC = MRecordRTC;
 }
 
 if (typeof define === 'function' && define.amd) {
